@@ -4,7 +4,7 @@ from langchain_community.chat_models import ChatTongyi
 def chat(message, history):
     llm = ChatTongyi(
         model_name="qwen-turbo",
-        dashscope_api_key="sk-f1f1cdcad2bc498c8683996a1ee4987b"
+        dashscope_api_key="sk-"
     )
     response = llm.invoke(message)
     return response.content
